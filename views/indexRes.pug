@@ -1,0 +1,20 @@
+doctype html
+head
+  style
+      include ../static/styleLogin.css
+  title LOGIN
+.container
+  form(action='/', method='post')
+    .title Resident Login
+    .input-box.underline
+      input(type='text' placeholder='Enter Your Email' required='' name='email')
+      .underline
+    .input-box
+      input(type='password' placeholder='Enter Your Password' required='' name='password')
+      .underline
+    .input-box.button
+      input(type='submit' name='' value='Continue')
+    .login-signup
+      span.text
+        | Not a member?
+        a.text.signup-link(href='/signup') Signup Now

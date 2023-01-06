@@ -1,0 +1,23 @@
+doctype html
+head
+style 
+   include ../static/visa.css
+title Document
+.container
+  .demo-flex-spacer
+    h1 VISA DETAILS
+  .webflow-style-input
+    input#in(type='text' placeholder="Your Country's Name")
+    .btn
+      button(type='submit' onclick='myFunction()')
+        i.icon.ion-android-arrow-forward Submit
+  .demo-flex-spacer
+script.
+  function myFunction() {
+  var firstname = document.getElementById('in').value;
+  console.log(firstname);
+  let st="https://visaindex.com/country/"+firstname+"-passport-ranking/";
+  console.log(st);
+  window.open(st,"_self");
+  }
+

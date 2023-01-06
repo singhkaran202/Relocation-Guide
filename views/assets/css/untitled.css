@@ -1,0 +1,31 @@
+.hh {
+  margin: auto;
+}
+
+.hh {
+  margin: auto;
+  text-align: center;
+}
+
+#noul {
+  text-decoration: none;
+}
+
+.cr {
+  background-color: white;
+}
+
+.bl {
+  background-color: black;
+}
+
+.im {
+  background-image: url('../../assets/img/wp10534292.webp');
+}
+
+.lef {
+  /*position: relative;*/
+  /*float: left;*/
+  /*margin-left: -105px;*/
+}
+

@@ -1,0 +1,36 @@
+doctype html
+head
+  style
+      include ../static/communityStyle.css
+  title community
+  link(rel='stylesheet' type='text/css' href='community.css')
+.main
+  .navbar
+    .logo BLUELEARN
+  .info
+    .head
+      h3
+        | CONNECT WITH YOUR 
+        span COMMUNITY
+        |  HERE 
+      form.search(name='f1', action='/search',method='post')
+         input(type='text' name='search' placeholder='SEARCH HERE....')
+         input(type='submit' value='SEARCH' )
+      ul(style='margin-top: 100px;display: flex;')
+          li(type='none' style='margin-left: 450px;')  #{residentName}
+          li(type='none' style='margin-left: 100px;')  #{residentEmail}
+          li(type='none' style=' margin-left: 100px;') #{residentCountry}
+      ul(style='margin-top: 80px;display: flex;')
+          li(type='none' style='margin-left: 450px;')  #{residentName1}
+          li(type='none' style='margin-left: 100px;')  #{residentEmail1}
+          li(type='none' style=' margin-left: 100px;') #{residentCountry1}
+      ul(style='margin-top: 80px;display: flex;')
+          li(type='none' style='margin-left: 450px;')  #{residentName2}
+          li(type='none' style='margin-left: 100px;')  #{residentEmail2}
+          li(type='none' style=' margin-left: 100px;') #{residentCountry2}
+      ul(style='margin-top: 80px;display: flex;')
+          li(type='none' style='margin-left: 450px;')  #{residentName3}
+          li(type='none' style='margin-left: 100px;')  #{residentEmail3}
+          li(type='none' style=' margin-left: 100px;') #{residentCountry3}
+      
+                

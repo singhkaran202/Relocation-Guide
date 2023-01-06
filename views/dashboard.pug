@@ -1,0 +1,76 @@
+doctype html
+head
+  style
+      include ../static/dashboardStyle.css
+  // Boxicons CDN Link
+  link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+.sidebar
+  .logo-details
+    span.logo_name   Bluelearn
+  ul.nav-links
+    li
+      a(href='/mover')
+        i.bx.bx-box
+        span.links_name Mover
+    li
+      a(href='/visa')
+        i.bx.bx-book-alt
+        span.links_name Visa
+    li
+      a(href='/community')
+        i.bx.bx-user
+        span.links_name Community
+   
+    li
+      a(href='/chat')
+        i.bx.bx-message
+        span.links_name Chat
+    li
+      a(href='/rental')
+        i.bx.bx-cog
+        span.links_name Rental
+    
+    li.log_out
+      a(href='/')
+        i.bx.bx-log-out
+        span.links_name Log out
+section.home-section
+  nav
+    .sidebar-button
+      i.bx.bx-menu.sidebarBtn
+      span.dashboard Dashboard
+    .profile-details
+      // <img src="images/profile.jpg" alt="">
+      span.admin_name #{userName}
+  .home-content
+    .overview-boxes
+      .box
+        .right-side
+          .box-topic(style='\
+text-align: center;\
+') Profile
+          img(src='https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg' style='\
+height: 8em; padding-left: 2.5em;\
+')
+          .indicator
+            //- span.text #{userName}
+            //- span.text #{userEmail}
+            //- span.text #{userCountry}
+            //- span.text #{userRole}
+            ul
+                li UserName: #{userName}
+                li Email Id: #{userEmail}
+                li Country: #{userCountry}
+                li Role: #{userRole}
+    
+script.
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".sidebarBtn");
+  sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+  }else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+  }

@@ -1,0 +1,133 @@
+doctype html
+html
+  head
+  //-   meta(charset='utf-8')
+  //-   meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    
+  title Home - Brand
+  style 
+
+    include assets/bootstrap/css/bootstrap.min.css
+    include assets/css/untitled.css
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&display=swap')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&display=swap')
+    link(rel='stylesheet' href='assets/fonts/font-awesome.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css')
+    link(rel='stylesheet' href='assets/css/untitled.css')
+  body#page-top(data-bs-spy='scroll' data-bs-target='#mainNav' data-bs-offset='57')
+    nav#mainNav.navbar.navbar-light.navbar-expand-sm.fixed-top(style='background-color: black; height: 50px;')
+      .container
+        a.navbar-brand.lef(href='#page-top' style='font-size: 18px;')
+          span(style='color: rgb(255, 255, 255);') Bluelearn
+        button.navbar-toggler.navbar-toggler-right(data-bs-toggle='collapse' data-bs-target='#navbarResponsive' type='button' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+          i.fa.fa-align-justify
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto
+            li.nav-item
+              a.nav-link(href='#about' style='font-size: 18px;')
+                span(style='color: rgb(255, 255, 255);') About
+            li.nav-item
+              a.nav-link(href='#services' style='font-size: 18px;')
+                span(style='color: rgb(255, 255, 255);') Services
+            li.nav-item
+              a.nav-link(href='#contact' style='font-size: 18px;')
+                span(style='color: rgb(255, 255, 255);') CONTACT
+            li.nav-item
+              a.nav-link(href='/login' style='font-size: 18px;')
+                span(style='color: rgb(255, 255, 255);') LOGIN
+        a#noul(href='/signup' style='color: rgba(255,255,255,0.7);height: 45.0938px;padding: 8PX 16PX;font-size: 19.4px;')
+          strong
+            span(style='color: rgb(255, 255, 255);') SIGNUP
+    div
+      header.text-center.text-white.d-flex.masthead.im(style="background-image: url('https://alanlclack.com/wp-content/uploads/2018/05/woodenmap.jpg')")
+      div(style='position: absolute;top: 50%;left: 50%;font-size: 10em;color:white;transform: translate(-50%, -50%);') Relocation Guide
+
+    section#about.bg-primary
+      .container
+        .row
+          .col.offset-lg-8.text-center.mx-auto
+            h2.text-white.section-heading Are you a student going abroad for education? Don’t know how you will manage everything on your own there? Well…We’ve got you covered
+            hr.light.my-4
+            p.text-faded.mb-4
+            a.btn.btn-light.btn-xl(role='button' href='/login') Get Started!
+    section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading At Your Service
+            hr.my-4
+      .container
+        .row
+          .col-md-6.col-lg-3.text-center
+            .mx-auto.service-box.mt-5
+              i.fa.fa-send.fa-4x.text-primary.mb-3.sr-icons(data-aos='zoom-in' data-aos-duration='200' data-aos-once='true')
+              h3.mb-3
+                a(href='/login' style='text-decoration: none;') MOVERS
+              p.text-muted.mb-0 No clue whom to contact for packing and moving? We’re here for you!.
+          .col-md-6.col-lg-3.text-center
+            .mx-auto.service-box.mt-5
+              i.fa.fa-group.fa-4x.text-primary.mb-3.sr-icons(data-aos='zoom-in' data-aos-duration='200' data-aos-delay='200' data-aos-once='true')
+              h3.mb-3
+                a(href='/login' style='text-decoration: none;') COMMUNITY
+              p.text-muted.mb-0 Worried, you won’t find any friends?
+          .col-md-6.col-lg-3.text-center
+            .mx-auto.service-box.mt-5
+              i.fa.fa-video-camera.fa-4x.text-primary.mb-3.sr-icons(data-aos='zoom-in' data-aos-duration='200' data-aos-delay='400' data-aos-once='true')
+              h3.mb-3
+                a(href='/login' style='text-decoration: none;')  GET IN TOUCH
+              p.text-muted.mb-0 Want to talk to someone who lives there and see the surrounding?
+          .col-md-6.col-lg-3.text-center
+            .mx-auto.service-box.mt-5
+              i.fa.fa-home.fa-4x.text-primary.mb-3.sr-icons(data-aos='fade' data-aos-duration='200' data-aos-delay='600' data-aos-once='true')
+              h3.mb-3
+                a(href='/login' style='text-decoration: none;') RENTALS
+              p.text-muted.mb-0  Looking for a house? See the wide variety of houses our partners can provide
+    section#portfolio.p-0
+    section.text-center.bg-light(style='color: rgb(0,0,0);background: rgb(0,0,0);--bs-body-bg: #000000;height: 718.917px;--bs-light: #ffffff;--bs-light-rgb: 255,255,255;')
+      .container
+        h2.mb-5
+          span(style='color: rgb(0, 0, 0);') What people are saying...
+        .row
+          .col-lg-4
+            .mx-auto.testimonial-item.mb-5.mb-lg-0
+              img.rounded-circle.img-fluid.mb-3(src='https://www.cloudways.com/wp-content/uploads/2020/01/testimonial-edward.png')
+              h5 Margaret E.
+              p.font-weight-light.mb-0
+                span(style='color: rgb(0, 0, 0);') "This is fantastic! Thanks so much guys!"
+          .col-lg-4
+            .mx-auto.testimonial-item.mb-5.mb-lg-0
+              img.rounded-circle.img-fluid.mb-3(src='https://media.istockphoto.com/photos/portrait-of-a-young-black-man-at-home-picture-id1329737171?b=1&k=20&m=1329737171&s=170667a&w=0&h=DVhBXOrVnCW7roPhOUJdvSY2-yca2ReyUF7xqtwYw-M=')
+              h5 Fred S.
+              p.font-weight-light.mb-0
+                span(style='color: rgb(0, 0, 0);')
+                  | "Great service! Helped me to relocate very easily."
+          .col-lg-4
+            .mx-auto.testimonial-item.mb-5.mb-lg-0
+              img.rounded-circle.img-fluid.mb-3(src='https://www.cloudways.com/wp-content/uploads/2020/01/testimonial-jan-koch.png')
+              h5 Sarah W.
+              p.font-weight-light.mb-0
+                span(style='color: rgb(0, 0, 0);') "Thanks so much for making these free resources available to us!"
+    section#contact
+      .container
+        .row
+          .col-lg-8.text-center.mx-auto
+            h2.section-heading Let's Get In Touch!
+            hr.my-4
+            p.mb-5
+              | Want to know more about us? Give us a call or contact us with email.
+      .row
+        .col-lg-4.text-center.ms-auto
+          i.fa.fa-phone.fa-3x.mb-3.sr-contact(data-aos='zoom-in' data-aos-duration='300' data-aos-once='true')
+          p 123-456-6789
+        .col-lg-4.text-center.me-auto
+          i.fa.fa-envelope-o.fa-3x.mb-3.sr-contact(data-aos='zoom-in' data-aos-duration='300' data-aos-delay='300' data-aos-once='true')
+          p
+            a(href='mailto:your-email@your-domain.com') email@example.com
+    script(src='assets/bootstrap/js/bootstrap.min.js')
+    script(src='assets/js/bs-init.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js')
+    script(src='assets/js/creative.js')
+     
