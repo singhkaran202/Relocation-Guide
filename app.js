@@ -1,16 +1,32 @@
 const express = require("express");
+require('dotenv').config();
 const path = require("path");
+const bodyParser = require("body-parser")
+const app= express();
+
+app.use(bodyParser.urlencoded({extended: true}));
 const mongoose = require("mongoose")
 const bcrypt = require("bcrypt");
 const { render } = require("express/lib/response");
 const { stringify } = require("querystring");
 
-main().catch(err => console.log(err));
+
+mongoose.set("strictQuery", false);
+
+
+const pass= process.env.MONGO_DB;
+
+
+
+
+main().catch(err => console.log("Not connected"+err));
 async function main() {
-    await mongoose.connect('mongodb://localhost:27017/realocation');
+    // await mongoose.connect('mongodb://127.0.0.1:27017/realocation');
+    // await mongoose.connect(pass, {useNewUrlParser: true, useCreateIndex: true});
+    await mongoose.connect(pass);
 }
 
-const app = express();
+// const app = express();
 const port = 8000;
 
 //Define contact Schema
@@ -36,7 +52,7 @@ personSchema.pre('save', async function (next) {
 })
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('statics'))
-app.use(express.urlencoded())
+// app.use(express.urlencoded())
 
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug')
